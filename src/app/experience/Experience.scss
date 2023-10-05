@@ -1,0 +1,17 @@
+.exp-wrapper {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  & > span > p {
+    display: inline;
+    width: fit-content;
+    font-size: 20px;
+  }
+}
+
+.exp-sec-1 {
+  display: flex;
+  width: 100%;
+  max-width: 520px;
+  margin-bottom: 50px;
+}

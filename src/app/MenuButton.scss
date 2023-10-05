@@ -1,0 +1,65 @@
+.menu-btn {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  min-width: fit-content;
+  border-radius: 50px;
+  margin: 10px 0;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu-clicked {
+  background: #af3434;
+}
+
+.menu-name {
+  color: #fff;
+  font-family: "ChangaOneRegular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+.menu-icon {
+  width: 18px;
+  height: auto;
+  margin: 0 10px 0px 10px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-btn {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    width: 22px;
+    height: auto;
+    margin: 5px;
+  }
+
+  .menu-name {
+    display: none;
+  }
+
+  .menu-clicked {
+    height: 100%;
+    border-radius: 0;
+    padding: 0 18px;
+    border-radius: 50px 50px 0 0;
+    margin: 0;
+    margin-bottom: -5%;
+    padding-bottom: 5%;
+    width: fit-content;
+  }
+}

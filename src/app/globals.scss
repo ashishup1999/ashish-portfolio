@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "ChangaOneItalic";
+  src: url("../../public/fonts/ChangaOne-Italic.ttf");
+}
+
+@font-face {
+  font-family: "ChangaOneRegular";
+  src: url("../../public/fonts/ChangaOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoCondensedRegular";
+  src: url("../../public/fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RobotoCondensedBold";
+  src: url("../../public/fonts/RobotoCondensed-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100dvh;
+  width: 100vw;
+  min-width: fit-content;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../public/images/bg_desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.doodle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+  width: auto;
+}
+
+.doodle-mobile {
+  display: none;
+}
+
+.mobile-header {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  p {
+    font-family: "ChangaOneRegular";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 5px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #af3434;
+  }
+  img {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app {
+    background-image: url("../../public/images/bg_mobile.svg");
+    flex-direction: column-reverse;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .doodle {
+    display: none;
+  }
+
+  .doodle-mobile {
+    display: block;
+    position: relative;
+    height: 120px;
+    width: auto;
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+}

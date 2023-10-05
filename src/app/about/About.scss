@@ -1,0 +1,70 @@
+.about-wrapper {
+  color: white;
+  & > span > p {
+    display: inline;
+    width: fit-content;
+  }
+}
+
+.about-sec-1 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  .greet {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 15px;
+  }
+  .name {
+    font-family: "RobotoCondensedBold";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: bold;
+    background: linear-gradient(180deg, #d09600 15.63%, #f61fe1 92.19%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.about-sec-2 {
+  display: flex;
+  margin-bottom: 15px;
+  .title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+.about-sec-3 {
+  display: flex;
+  margin-bottom: 30px;
+  .summary {
+    font-size: 18px;
+    font-style: normal;
+    max-width: 400px;
+  }
+}
+
+.about-sec-4 {
+  display: flex;
+  margin-bottom: 30px;
+  .skill-title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+.about-sec-5 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 490px;
+  flex-wrap: wrap;
+  padding: auto;
+  margin-bottom: 20px;
+}
