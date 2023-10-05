@@ -8,6 +8,12 @@
   border: 1px solid #000;
   background: #121212;
   box-shadow: rgba(148, 4, 177, 0.748) 0px 0px 10px 1px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .logo {
