@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./Projects.scss";
 import { PROJECTS_TEXT } from "@/constants/CommonTexts";
 import Image from "next/image";
@@ -9,7 +9,7 @@ const Projects = () => {
     <div className="projects">
       {PROJECTS_TEXT.map((project) => {
         return (
-          <>
+          <Fragment key={project?.name}>
             <div className="pr-1">
               <p className="pr-name">{project?.name}</p>
               {project?.link && (
@@ -33,7 +33,7 @@ const Projects = () => {
                 <p key={tool}>{tool}</p>
               ))}
             </div>
-          </>
+          </Fragment>
         );
       })}
     </div>

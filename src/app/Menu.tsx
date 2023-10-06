@@ -35,12 +35,6 @@ const Menu = ({
           setClickedMenu={setClickedMenu}
         />
         <MenuButton
-          label={MENU.RESUME}
-          icon={ICONS.resumeIcon}
-          clickedBtn={clickedBtn}
-          setClickedMenu={setClickedMenu}
-        />
-        <MenuButton
           label={MENU.ACHIEVEMENT}
           icon={ICONS.achieveIcon}
           clickedBtn={clickedBtn}

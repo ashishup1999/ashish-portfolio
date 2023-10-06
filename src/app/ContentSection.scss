@@ -1,12 +1,12 @@
 .content-wrapper {
   display: flex;
   flex: 1;
-  height: calc(100vh - 7%);
+  height: calc(100vh - 2%);
   flex-direction: column;
   max-width: 100%;
   min-width: 400px;
-  margin: 7% 0 auto 0;
-  padding: 30px 40% 30px 0;
+  margin: 2% 0 auto 0;
+  padding: 30px 20% 30px 0;
   padding-left: 10%;
   overflow-y: scroll;
   &::-webkit-scrollbar {
@@ -20,8 +20,9 @@
   }
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 601px) {
+@media only screen and (max-width: 1100px) and (max-height: 600px) {
   .content-wrapper {
+    margin-top: 10px;
     padding-right: 100px;
   }
 }

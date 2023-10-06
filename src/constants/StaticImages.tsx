@@ -6,7 +6,6 @@ import logo from "../../public/images/logo.svg";
 import achieveIcon from "../../public/icons/achieve_white.svg";
 import expIcon from "../../public/icons/experience_white.svg";
 import aboutIcon from "../../public/icons/info_white.svg";
-import resumeIcon from "../../public/icons/resume_white.svg";
 import projectsIcon from "../../public/icons/project_white.svg";
 import arrowRight from "../../public/icons/arrow-right.svg";
 import github from "../../public/icons/github.svg";
@@ -41,7 +40,6 @@ export const ICONS = {
   achieveIcon,
   expIcon,
   aboutIcon,
-  resumeIcon,
   projectsIcon,
   arrowRight,
   github,

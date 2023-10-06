@@ -9,7 +9,6 @@ import ContentSection from "./ContentSection";
 import About from "./about/About";
 import Projects from "./projects/Projects";
 import Experience from "./experience/Experience";
-import Resume from "./resume/Resume";
 import Achievements from "./achievements/Achievements";
 import { MENU } from "@/constants/CommonTexts";
 
@@ -18,7 +17,6 @@ const App = () => {
     About: <About />,
     Experience: <Experience />,
     Projects: <Projects />,
-    Resume: <Resume />,
     Achievements: <Achievements />,
   };
 

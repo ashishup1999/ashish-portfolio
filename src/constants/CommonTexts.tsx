@@ -4,7 +4,6 @@ export const MENU = {
   ABOUT: "About",
   EXPERIENCE: "Experience",
   PROJECTS: "Projects",
-  RESUME: "Resume",
   ACHIEVEMENT: "Achievements",
 };
 
