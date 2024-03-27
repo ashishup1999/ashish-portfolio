@@ -27,6 +27,11 @@ import faceMaskImg from "../../public/images/projects/fm.png";
 import nstImg from "../../public/images/projects/nst.png";
 import nlpImg from "../../public/images/projects/nlp.png";
 import samvadImg from "../../public/images/projects/samvad.png";
+import codeKarImg from "../../public/images/projects/codeKar.png";
+import dockerIcon from "../../public/images/skills/docker.svg";
+import ksIcon from "../../public/images/skills/ks.svg";
+import reduxIcon from "../../public/images/skills/redux.svg";
+import goIcon from "../../public/images/skills/go.svg";
 
 export const IMAGES = {
   desktopBg,
@@ -60,6 +65,10 @@ export const SKILLS_ICONS = {
   yarn: yarnIcon,
   vite: viteIcon,
   py: pyIcon,
+  go: goIcon,
+  dockr: dockerIcon,
+  kubernetes: ksIcon,
+  redux: reduxIcon,
 };
 
 export const PROJECT_IMAGES = {
@@ -67,4 +76,5 @@ export const PROJECT_IMAGES = {
   nstImg,
   nlpImg,
   samvadImg,
+  codeKarImg,
 };

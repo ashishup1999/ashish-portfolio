@@ -11,27 +11,54 @@ export const ABOUT_TEXTS = {
   greet: "Namaste 🙏 All, I am",
   name: "Ashish Upadhyay",
   title: "Software Developer (Full Stack)",
-  summary:
-    "Highly skilled and adaptable full-stack software developer with a passion for crafting robust and innovative digital solutions (specially in front end). With 1+ years of experience in the field, I have honed my expertise in both front-end and back-end development, enabling me to seamlessly bridge the gap between design and functionality. Also as an additional bonus, I have an extra skill of Deep learning in my arsenal as well, I have worked on several team based projects related to the respective field. ",
+  summary: `Highly skilled and adaptable full-stack software developer with a passion for crafting robust and innovative digital solutions. I'm Currently employed as a software developer in a fintech company with over 2 years of experience in the field, 
+  I have honed my expertise in both front-end and back-end development, enabling me to seamlessly bridge the gap between design and functionality. Additionally,
+  I also have a strong background in Deep Learning, having worked on several team-based projects in this field.`,
   skillTitle: "My Skills",
 };
 
 export const EXP_TEXTS = {
-  summary:
-    "I have accumulated approximately 2+ years of professional experience, comprising 1+ year of full-time employment and 1 year of prior internship roles. This entirety of work experience is detailed below.",
+  summary: `I am presently employed as a software developer in a fintech company, with more than 2 years of experience in industrial
+    environments. My expertise lies in Full stack web development, encompassing Frontend, Backend and Devops.`,
   exps: [
     {
       job: "Software Developer, IDFC First Bank Ltd.",
-      duration: "Jul 2022 -  present",
+      duration: "May 2023 - present",
       location: "Bengaluru, India",
-      desc: "I have contributed to various banking projects aimed at enhancing system robustness and optimizing the user interface, facilitating seamless execution of a wide range of banking tasks.",
-      techs: ["ReactJs", "JavaScript", "Styled Component", "Jest"],
+      desc: `● Spearheaded the transformation of the bank's NRI Savings Account onboarding journey from manual
+      pen-and-paper processes to a fully digital platform, featuring a robust and user-friendly UI. Achieved an impressive
+      80% reduction in account opening time.
+      ● Implemented key features including automatic data retrieval from existing sources and seamless document
+      upload to AWS with automatic rollback in case of failure. These enhancements significantly improved user
+      experience and contributed to a remarkable 200% increase in the bank's NRI user base.
+      ● Currently driving the implementation of a video-based verification system for NRI customer account openings,
+      aimed at further reducing account opening time by 20%.
+      ● Concurrently optimized the other existing account opening journeys codebase, resulting in a 10% increase in
+      platform’s performance.
+      `,
+      techs: ["ReactJs", "JavaScript", "Go", "Docker", "Typescript", "Kafka", "WebSockets", "Jest"],
+    },
+    {
+      job: "Application Engineer, IDFC First Bank Ltd.",
+      duration: "Jul 2022 -  May 2023",
+      location: "Bengaluru, India",
+      desc: `● Contributed to the development of a Go-based communication platform. This platform facilitated the
+      transmission of messages from banks to users through various channels including SMS, email, and WhatsApp.
+      Enhancing system throughput by 8%..
+      ● Built robust communication systems and ensured seamless delivery across multiple channels. This initiative
+      resulted in a significant increase in message delivery efficiency, with a measurable impact on user engagement
+      and satisfaction. Which led to a significant rise of 2 times of the bank wide customer base.
+      `,
+      techs: ["ReactJs", "JavaScript", "Go", "Docker", "Typescript", "Kafka", "WebSockets", "Jest"],
     },
     {
       job: "Software Developer Intern, Persistent Systems",
       duration: "Jan 2022 - May 2022",
       location: "Remote",
-      desc: "I played a key role in implementing a single-page application with React, which led to enhanced overall performance and user-friendliness. This was achieved within an Agile development framework that fostered improved team collaboration and resulted in a reduction in the Development Life Cycle timeline.",
+      desc: `● Contributed to the implementation of an application using ReactJs, enhancing overall performance and usability
+      within an Agile development methodology by 15%.
+      ● The approach not only improved team collaboration but also led to a reduction in the Development Life Cycle time
+      by 50%.`,
       techs: ["ReactJs", "JavaScript", "HTML", "CSS"],
     },
     {
@@ -46,8 +73,28 @@ export const EXP_TEXTS = {
 
 export const PROJECTS_TEXT = [
   {
+    name: "CodeKar (Coding Platform)",
+    link: "https://codekar-one.vercel.app/",
+    image: PROJECT_IMAGES.codeKarImg,
+    github: "https://github.com/ashishup1999/codekar-server",
+    desc: `An authentication-based platform enabling users to create mini projects using HTML, CSS, and
+    JavaScript. Provides code-editor playgrounds supporting 5 languages that are Java, Python, Go, C++, and Js.
+    Introducing a unique whiteboard-like code-editor mode devoid of common editor features such as auto-suggestion,
+    auto-completion, and auto-indentation to help users grasp a deeper understanding of language’s features.
+    Facilitates exploration of other user’s playgrounds with the option to connect and collaborate.
+    Used a Go based server as Go can handle as many as 1000 concurrent requests per second, making the app faster`,
+    tools: [
+      "NextJs",
+      "JavaScript",
+      "Go",
+      "MongoDB",
+      "Styled Component",
+      "Docker",
+    ],
+  },
+  {
     name: "Samvad (Chat Application)",
-    link: "https://samvad-client.onrender.com/",
+    link: "https://samvad-client-img-latest.onrender.com/",
     image: PROJECT_IMAGES.samvadImg,
     github: "https://github.com/ashishup1999/samvad-client",
     desc: "Samvad is a web-based, responsive application designed for real-time chatting with friends. This project highlights the effective use of web sockets for seamless real-time communication. The user interface offers a smooth experience, allowing users to easily log in and initiate conversations with their loved ones.",

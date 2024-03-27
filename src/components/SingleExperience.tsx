@@ -21,7 +21,12 @@ const SingleExperience = ({
         <div className="duration">{duration}</div>
       </div>
       <div className="location">{location}</div>
-      <div className="desc">{desc}</div>
+      <ul className="desc">
+        {desc.split("●").map((str) => {
+          if (!str) return <></>;
+          return <li key={str.slice(0, 10)}>{str}</li>;
+        })}
+      </ul>
       <div className="techs">
         {techs.map((tech) => {
           return <p key={tech}>{tech}</p>;

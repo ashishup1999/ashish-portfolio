@@ -11,20 +11,22 @@ const Projects = () => {
         return (
           <Fragment key={project?.name}>
             <div className="pr-1">
-              <p className="pr-name">{project?.name}</p>
-              {project?.link && (
+              {project?.link ? (
                 <a className="pr-link" href={project?.link} target="_blank">
-                  <Image src={ICONS.arrowRight} alt="" />
+                  <p className="pr-name">{project?.name}</p>
                 </a>
+              ) : (
+                <p className="pr-name">{project?.name}</p>
               )}
             </div>
 
-            <a href={project?.github} target="_blank">
-              <div className="pr-2">
-                <Image className="pr-img" src={project?.image} alt="" />
+            <div className="pr-2">
+              <Image className="pr-img" src={project?.image} alt="" />
+              <a href={project?.github} target="_blank">
                 <Image className="pr-git" src={ICONS.github} alt="" />
-              </div>
-            </a>
+              </a>
+            </div>
+
             <div className="pr-3">
               <p>{project?.desc}</p>
             </div>
