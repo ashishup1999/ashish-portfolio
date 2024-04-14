@@ -1,3 +1,15 @@
+@keyframes marquee {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 112.5px;
+  }
+  100% {
+    width: 225px;
+  }
+}
+
 .about-wrapper {
   color: white;
   & > span > p {
@@ -19,13 +31,16 @@
   }
   .name {
     font-family: "RobotoCondensedBold";
-    font-size: 34px;
+    font-size: 32px;
     font-style: normal;
     font-weight: bold;
     background: linear-gradient(180deg, #d09600 15.63%, #f61fe1 92.19%);
     color: transparent;
     background-clip: text;
+    // border-right: 2px solid white;
     -webkit-background-clip: text;
+    white-space: nowrap;
+    // animation: marquee 2s linear infinite;
   }
 }
 
@@ -45,7 +60,6 @@
   .summary {
     font-size: 18px;
     font-style: normal;
-    max-width: 400px;
   }
 }
 
@@ -63,7 +77,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 490px;
   flex-wrap: wrap;
   padding: auto;
   margin-bottom: 20px;

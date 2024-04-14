@@ -8,9 +8,9 @@ export const MENU = {
 };
 
 export const ABOUT_TEXTS = {
-  greet: "Namaste 🙏 All, I am",
+  greet: "Hi, I am",
   name: "Ashish Upadhyay",
-  title: "Software Developer (Full Stack)",
+  title: "Software Developer",
   summary: `Highly skilled and adaptable full-stack software developer with a passion for crafting robust and innovative digital solutions. I'm Currently employed as a software developer in a fintech company with over 2 years of experience in the field, 
   I have honed my expertise in both front-end and back-end development, enabling me to seamlessly bridge the gap between design and functionality. Additionally,
   I also have a strong background in Deep Learning, having worked on several team-based projects in this field.`,
@@ -85,7 +85,7 @@ export const PROJECTS_TEXT = [
     Used a Go based server as Go can handle as many as 1000 concurrent requests per second, making the app faster`,
     tools: [
       "NextJs",
-      "JavaScript",
+      "TypeScript",
       "Go",
       "MongoDB",
       "Styled Component",

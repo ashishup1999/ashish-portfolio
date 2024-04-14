@@ -49,79 +49,65 @@ body {
   background-position: center;
 }
 
-.doodle {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 150px;
-  width: auto;
-  opacity: 0.5;
-}
-
-.doodle-mobile {
+.mobile-header {
   display: none;
 }
 
-.mobile-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.mobile-option {
+  width: fit-content;
+  text-align: center;
+  min-width: 300px;
+  font-family: "ChangaOneRegular";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 10px;
   margin-bottom: 25px;
-  p {
-    width: 400px;
-    text-align: center;
-    font-family: "ChangaOneRegular";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    margin-right: 5px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    background: #af3434;
-    border: 2px solid white;
-  }
-  img {
-    display: none;
-    width: 50px;
-  }
+  padding: 10px 20px;
+  background: #af3434;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  position: relative;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .app {
     background-image: url("../../public/images/bg_mobile.svg");
-    flex-direction: column-reverse;
+    flex-direction: column;
     display: flex;
     width: 100%;
     height: 100%;
-  }
-
-  .doodle {
-    display: none;
-  }
-
-  .doodle-mobile {
-    display: block;
-    position: relative;
-    height: 120px;
-    width: auto;
-    margin-left: auto;
-    margin-top: auto;
-    opacity: 0.5;
+    max-height: 100vh;
   }
 
   .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px 5px;
     p {
       width: auto;
+      text-align: center;
+      font-family: "ChangaOneRegular";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      margin-right: 5px;
+      padding: 10px 20px;
+      border-radius: 50px;
+      background: #af3434;
+      border: 2px solid white;
+      color: white;
     }
     img {
       display: block;
+      width: 50px;
     }
   }
-}
 
-@media only screen and (max-width: 1000px) {
-  .doodle {
+  .mobile-option {
     display: none;
   }
 }

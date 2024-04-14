@@ -1,11 +1,12 @@
 import React from "react";
 import "./Experience.scss";
-import { EXP_TEXTS } from "@/constants/CommonTexts";
+import { EXP_TEXTS, MENU } from "@/constants/CommonTexts";
 import SingleExperience from "@/components/SingleExperience";
 
 const Experience = () => {
   return (
     <div className="exp-wrapper">
+      <p className="mobile-option">{MENU.EXPERIENCE}</p>
       <span className="exp-sec-1">
         <p className="summary">{EXP_TEXTS.summary}</p>
       </span>

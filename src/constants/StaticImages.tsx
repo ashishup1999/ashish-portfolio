@@ -2,6 +2,7 @@ import desktopBg from "../../public/images/bg_desktop.svg";
 import mobileBg from "../../public/images/bg_mobile.svg";
 import loaderImg from "../../public/images/loader.svg";
 import coderDoodle from "../../public/images/coder_guy.svg";
+import coderDoodlePng from "../../public/images/coder_guy.png";
 import logo from "../../public/images/logo.svg";
 import achieveIcon from "../../public/icons/achieve_white.svg";
 import expIcon from "../../public/icons/experience_white.svg";
@@ -37,6 +38,7 @@ export const IMAGES = {
   desktopBg,
   mobileBg,
   coderDoodle,
+  coderDoodlePng,
   loaderImg,
   logo,
 };

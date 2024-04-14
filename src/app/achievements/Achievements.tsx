@@ -1,10 +1,11 @@
-import { ACHIEVEMENT_TEXTS } from "@/constants/CommonTexts";
+import { ACHIEVEMENT_TEXTS, MENU } from "@/constants/CommonTexts";
 import React from "react";
 import "./Achievements.scss";
 
 const Achievements = () => {
   return (
     <div className="achvs-wrapper">
+      <p className="mobile-option">{MENU.ACHIEVEMENT}</p>
       <div className="certifications">
         <h1>{ACHIEVEMENT_TEXTS.LnC}</h1>
         {ACHIEVEMENT_TEXTS.certifications.map((cert, idx) => (

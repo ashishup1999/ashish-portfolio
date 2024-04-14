@@ -1,12 +1,13 @@
 import React from "react";
 import "./About.scss";
-import { ABOUT_TEXTS } from "@/constants/CommonTexts";
+import { ABOUT_TEXTS, MENU } from "@/constants/CommonTexts";
 import Skill from "@/components/Skill";
 import { SKILLS } from "@/constants/CommonConstant";
 
 const About = () => {
   return (
     <div className="about-wrapper">
+      <p className="mobile-option">{MENU.ABOUT}</p>
       <span className="about-sec-1">
         <p className="greet">{ABOUT_TEXTS.greet}</p>
         <p className="name">{ABOUT_TEXTS.name}</p>

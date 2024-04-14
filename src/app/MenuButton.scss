@@ -34,7 +34,7 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .menu-btn {
     align-items: center;
     justify-content: center;
@@ -52,13 +52,9 @@
   }
 
   .menu-clicked {
-    height: 100%;
     border-radius: 0;
-    padding: 0 18px;
-    border-radius: 50px 50px 0 0;
+    border-radius: 50px;
     margin: 0;
-    margin-bottom: -5%;
-    padding-bottom: 5%;
     width: fit-content;
   }
 }

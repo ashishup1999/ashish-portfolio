@@ -1,17 +1,53 @@
 "use client";
-import React, { ReactNode, useEffect, useRef } from "react";
+import React, { ReactNode } from "react";
 import "./ContentSection.scss";
+import { MENU } from "@/constants/CommonTexts";
 
-const ContentSection = ({ children }: { children: ReactNode }) => {
-  const contentRef = useRef<null | HTMLDivElement>(null);
-  useEffect(() => {
-    if (contentRef?.current) {
-      contentRef?.current?.scrollTo(0, 0);
+const ContentSection = ({
+  children,
+  setClickedMenu,
+}: {
+  children: ReactNode;
+  setClickedMenu: Function;
+}) => {
+
+  const onScroll = () => {
+    const ab = document.querySelector(".about-wrapper");
+    if (ab) {
+      const { top } = ab?.getBoundingClientRect();
+      if (top > 0 && top < (window.innerHeight * 2) / 3) {
+        setClickedMenu(MENU.ABOUT);
+        return;
+      }
     }
-  }, [children]);
+    const exp = document.querySelector(".exp-wrapper");
+    if (exp) {
+      const { top } = exp?.getBoundingClientRect();
+      if (top > 0 && top < (window.innerHeight * 2) / 3) {
+        setClickedMenu(MENU.EXPERIENCE);
+        return;
+      }
+    }
+    const proj = document.querySelector(".projects");
+    if (proj) {
+      const { top } = proj?.getBoundingClientRect();
+      if (top > 0 && top < (window.innerHeight * 2) / 3) {
+        setClickedMenu(MENU.PROJECTS);
+        return;
+      }
+    }
+    const achv = document.querySelector(".achvs-wrapper");
+    if (achv) {
+      const { top } = achv?.getBoundingClientRect();
+      if (top > 0 && top < (window.innerHeight * 2) / 3) {
+        setClickedMenu(MENU.ACHIEVEMENT);
+        return;
+      }
+    }
+  };
 
   return (
-    <div ref={contentRef} className="content-wrapper">
+    <div className="content-wrapper" onScroll={onScroll}>
       {children}
     </div>
   );

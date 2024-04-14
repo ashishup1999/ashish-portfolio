@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
 import "./Projects.scss";
-import { PROJECTS_TEXT } from "@/constants/CommonTexts";
+import { MENU, PROJECTS_TEXT } from "@/constants/CommonTexts";
 import Image from "next/image";
 import { ICONS } from "@/constants/StaticImages";
 
 const Projects = () => {
   return (
     <div className="projects">
+      <p className="mobile-option">{MENU.PROJECTS}</p>
       {PROJECTS_TEXT.map((project) => {
         return (
           <Fragment key={project?.name}>
