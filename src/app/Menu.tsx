@@ -21,24 +21,28 @@ const Menu = ({
           icon={ICONS.aboutIcon}
           clickedBtn={clickedBtn}
           setClickedMenu={setClickedMenu}
+          selector=".about-wrapper"
         />
         <MenuButton
           label={MENU.EXPERIENCE}
           icon={ICONS.expIcon}
           clickedBtn={clickedBtn}
           setClickedMenu={setClickedMenu}
+          selector=".exp-wrapper"
         />
         <MenuButton
           label={MENU.PROJECTS}
           icon={ICONS.projectsIcon}
           clickedBtn={clickedBtn}
           setClickedMenu={setClickedMenu}
+          selector=".projects"
         />
         <MenuButton
           label={MENU.ACHIEVEMENT}
           icon={ICONS.achieveIcon}
           clickedBtn={clickedBtn}
           setClickedMenu={setClickedMenu}
+          selector=".achvs-wrapper"
         />
       </div>
     </div>

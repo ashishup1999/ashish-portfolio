@@ -9,15 +9,22 @@ const MenuButton = ({
   label,
   setClickedMenu,
   clickedBtn,
+  selector,
 }: {
   icon: string;
   label: string;
   setClickedMenu: Function;
   clickedBtn: string;
-}) => {
+  selector: string;
+  }) => {
+  
   const onClick = (e: any) => {
     const { testid } = e.currentTarget.dataset;
     setClickedMenu(testid);
+    const ele: HTMLDivElement | null = document.querySelector(selector);
+    if (ele) {
+      ele.scrollIntoView();
+    }
   };
 
   return (
