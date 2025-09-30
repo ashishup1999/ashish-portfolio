@@ -32,7 +32,7 @@ export const ABOUT = {
   name: "ASHISH UPADHYAY",
   alias: "<Software Developer>",
   summary:
-    "I Full-stack Software Engineer with over 3 years of experience developing scalable, high-performance web applications using React.js, TypeScript, Next.js, NodeJs and Golang. Demonstrated success in delivering digital transformation in banking domains. Strong analytical thinker with 550+ algorithmic problems solved across LeetCode, GFG, and HackerRank. Actively working on system design, developer experience, and cross-functional collaboration.",
+    "I am a Full-stack Software Engineer with over 3 years of experience developing scalable, high-performance web applications using React.js, TypeScript, Next.js, NodeJs and Golang. Demonstrated success in delivering digital transformation in banking domains. Strong analytical thinker with 550+ algorithmic problems solved across LeetCode, GFG, and HackerRank. Actively working on system design, developer experience, and cross-functional collaboration.",
 };
 
 export const SKILLS_ICONS = {
