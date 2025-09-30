@@ -27,13 +27,12 @@ import nstImg from "@/assets/work-images/nst.png";
 import idfcLogo from "@/assets/exps/idfc.png";
 import persiLogo from "@/assets/exps/persi.png";
 import iiitdmLogo from "@/assets/exps/iiitdm.png";
-import { StaticImageData } from "next/image";
 
 export const ABOUT = {
   name: "ASHISH UPADHYAY",
   alias: "<Software Developer>",
   summary:
-    "I am a full stack software developer with over 2 years of experience in the industrial settings. Currently, I am employed at IDFC FIRST BANK Ltd. where I have led several successful projects that have significantly improved operational efficiency and user experience. My primary expertise lies in full stack web development, encompassing front-end, back-end, and Dev Ops.",
+    "I Full-stack Software Engineer with over 3 years of experience developing scalable, high-performance web applications using React.js, TypeScript, Next.js, NodeJs and Golang. Demonstrated success in delivering digital transformation in banking domains. Strong analytical thinker with 550+ algorithmic problems solved across LeetCode, GFG, and HackerRank. Actively working on system design, developer experience, and cross-functional collaboration.",
 };
 
 export const SKILLS_ICONS = {
@@ -147,36 +146,21 @@ export const EXPS = [
   {
     id: "idfc2",
     img: idfcLogo,
-    name: "<Software Developer>",
+    name: "<Developer>",
     extra: "IDFC First Bank | May 2023 - present",
-    desc: `Led the digitization of the bank's NRI Savings Account onboarding, transitioning from manual to fully digital
-            processes with a streamlined UI, resulting in an 80% reduction in account opening time.<br/><br/>
-            Implemented automated data retrieval and seamless document upload to AWS, with automatic rollback in case of
-            failures. Resulted in a 200% increase in the bank's NRI user base.<br/><br/>
-            Orchestrated the successful integration of a video-driven identity verification process for NRI account openings,
-            resulting in a 20% reduction in account setup timelines and improved operational efficiency.<br/><br/>
-            Optimized the other existing account opening journeys codebase, resulting in a 10% increase in platform’s
-            performance.`,
-  },
-  {
-    id: "idfc1",
-    img: idfcLogo,
-    name: "<Application Engineer>",
-    extra: "IDFC First Bank | Jul 2022 - May - 2023",
-    desc: `Developed a Go-based communication platform to streamline message delivery from banks to users across
-            multiple channels such as SMS, email, and WhatsApp. Achieved an 8% improvement in system throughput.<br/><br/>
-            Programmed robust communication systems across multiple channels, significantly increasing message delivery
-            efficiency. Resulted in a 2x rise in the bank-wide customer base.`,
+    desc: `<ul><li> Developed and maintained five user’s accounts onboarding portals (NRI, Resident, Corporate, Fastag, Staff), Adding 10K+ daily users via Akamai CDN, enhancing availability and response time.</li>
+           <li> Led the end-to-end development of a React-based NRI onboarding platform, reducing account creation time by 80% through modern UI and optimized APIs.</li>
+           <li> Integrated secure authentication modules (Video KYC, LDAP, FingerprintJS); enabled RM-assisted workflows for enterprise clients.</li>
+           <li> Created a FlutterFlow app for seamless Resident-to-NRI migration; orchestrated communication between React and Flutter within a mono-repo structure.</li>
+           <li> Secured APIs with robust encryption and mitigation techniques, shielding against DDoS and automation attacks.</li>
+           <li> Enhanced code quality by reducing bugs 80% using Jest and ESLint; accelerated performance by 60% with lazy loading, Lighthouse tuning, and Gzip</li></ul>`,
   },
   {
     id: "persi",
     img: persiLogo,
     name: "<SDE Intern>",
     extra: "Persistent Systems | Jan 2022 - May 2022",
-    desc: `Designed an application using ReactJs within an Agile development methodology, resulting in a notable 15%
-            improvement in overall performance and usability.
-            <br/><br/> The approach not only improved team collaboration but also led to a reduction in the Development Life Cycle time
-            by 50%.
+    desc: `Boosted performance of a Node.js-based enterprise platform by 15% through improved state handling and compo- nent optimization in Agile delivery cycles.
 `,
   },
   {
