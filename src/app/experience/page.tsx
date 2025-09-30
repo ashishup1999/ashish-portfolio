@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "@/app/experience/experience.scss";
+import "./experience.scss";
 import Image from "next/image";
 import arrowLeft from "@/assets/arrowLeft.svg";
 import arrowRight from "@/assets/arrowRight.svg";
