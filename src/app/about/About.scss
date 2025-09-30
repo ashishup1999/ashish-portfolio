@@ -1,83 +1,49 @@
-@keyframes marquee {
-  0% {
-    width: 0px;
-  }
-  50% {
-    width: 112.5px;
-  }
-  100% {
-    width: 225px;
-  }
-}
+@import "src/app/globalValues";
 
-.about-wrapper {
-  color: white;
-  & > span > p {
-    display: inline;
-    width: fit-content;
-  }
-}
-
-.about-sec-1 {
+#about-sec {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  .greet {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    margin-right: 15px;
+  flex-direction: column;
+  width: 70%;
+  gap: 10px;
+  margin-top: 2%;
+  overflow-y: scroll;
+  #full-name {
+    font-size: 56px;
   }
-  .name {
-    font-family: "RobotoCondensedBold";
+  #alias {
     font-size: 32px;
-    font-style: normal;
-    font-weight: bold;
-    background: linear-gradient(180deg, #d09600 15.63%, #f61fe1 92.19%);
-    color: transparent;
-    background-clip: text;
-    // border-right: 2px solid white;
-    -webkit-background-clip: text;
-    white-space: nowrap;
-    // animation: marquee 2s linear infinite;
+  }
+  #my-summary {
+    font-size: 20px;
+  }
+  #coding-chad {
+    margin-top: 20px;
+    img {
+      height: 250px;
+      width: auto;
+    }
   }
 }
 
-.about-sec-2 {
-  display: flex;
-  margin-bottom: 15px;
-  .title {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
+@media only screen and (max-width: 750px) {
+  #about-sec {
+    margin-top: 15vh;
+    width: 80%;
+    #full-name {
+      font-size: 42px;
+    }
+    #alias {
+      font-size: 24px;
+    }
+    #my-summary {
+      font-size: 18px;
+    }
+    #coding-chad {
+      margin-top: 20px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
-}
-
-.about-sec-3 {
-  display: flex;
-  margin-bottom: 30px;
-  .summary {
-    font-size: 18px;
-    font-style: normal;
-  }
-}
-
-.about-sec-4 {
-  display: flex;
-  margin-bottom: 30px;
-  .skill-title {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-  }
-}
-
-.about-sec-5 {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap;
-  padding: auto;
-  margin-bottom: 20px;
 }
