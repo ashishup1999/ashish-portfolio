@@ -1,5 +1,5 @@
 import React from "react";
-import "@/app/about/about.scss";
+import "@/app/about/about.css";
 import { ABOUT } from "@/constants/Common";
 import Image from "next/image";
 import codingChad from "@/assets/coddingChad.svg";

@@ -1,0 +1,49 @@
+#about-sec {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 10px;
+  margin-top: 2%;
+  overflow-y: scroll;
+}
+#about-sec #full-name {
+  font-size: 56px;
+}
+#about-sec #alias {
+  font-size: 32px;
+}
+#about-sec #my-summary {
+  font-size: 20px;
+}
+#about-sec #coding-chad {
+  margin-top: 20px;
+}
+#about-sec #coding-chad img {
+  height: 250px;
+  width: auto;
+}
+
+@media only screen and (max-width: 750px) {
+  #about-sec {
+    margin-top: 15vh;
+    width: 80%;
+  }
+  #about-sec #full-name {
+    font-size: 42px;
+  }
+  #about-sec #alias {
+    font-size: 24px;
+  }
+  #about-sec #my-summary {
+    font-size: 18px;
+  }
+  #about-sec #coding-chad {
+    margin-top: 20px;
+  }
+  #about-sec #coding-chad img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

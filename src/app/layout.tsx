@@ -1,6 +1,6 @@
 "use client";
 import { Inter, Goldman, Iceland } from "next/font/google";
-import "./global.scss";
+import "./global.css";
 import logo from "@/../public/Logo.svg";
 import arrowDown from "@/assets/arrowDown.svg";
 import lnkdin from "@/assets/lnkdin.svg";

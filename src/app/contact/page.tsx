@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import "@/app/contact/contact.scss";
+import "@/app/contact/contact.css";
 import myImg from "@/assets/MyImage.png";
 import { Iceland } from "next/font/google";
 

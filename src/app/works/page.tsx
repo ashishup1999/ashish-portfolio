@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "@/app/works/works.scss";
+import "@/app/works/works.css";
 import Image from "next/image";
 import arrowLeft from "@/assets/arrowLeft.svg";
 import arrowRight from "@/assets/arrowRight.svg";
@@ -36,11 +36,7 @@ const Works = () => {
               {WORKS[wno]?.ui && (
                 <>
                   <p> | </p>
-                  <a
-                    className="ui-code"
-                    href={WORKS[wno]?.ui}
-                    target="_blank"
-                  >
+                  <a className="ui-code" href={WORKS[wno]?.ui} target="_blank">
                     Code-FE
                   </a>
                 </>

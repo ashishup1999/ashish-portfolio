@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "@/app/skills/skills.scss";
+import "@/app/skills/skills.css";
 import Image from "next/image";
 import { SKILLS_ICONS, SKILLS_NAMES } from "@/constants/Common";
 
